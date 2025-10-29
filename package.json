@@ -1,0 +1,22 @@
+{
+  "name": "ITE-18 Activity 3.4 Physics",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://mariannebarbin-png.github.io/Activity3.4/",
+  "devDependencies": {
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "cannon-es": "^0.20.0",
+    "lil-gui": "^0.17.0",
+    "three": "^0.148.0"
+  }
+}
