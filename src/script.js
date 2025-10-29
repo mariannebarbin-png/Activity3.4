@@ -85,14 +85,12 @@ const objectsToUpdate = []
 
 // Create sphere
 const sphereGeometry = new THREE.SphereGeometry(1, 20, 20)
-debugObject.sphereColor = '#c58282ff'
-
 const sphereMaterial = new THREE.MeshStandardMaterial({
+    color: '#ff6b6b',
     metalness: 0.3,
     roughness: 0.4,
     envMap: environmentMapTexture,
-    envMapIntensity: 0.5,
-    color: debugObject.sphereColor
+    envMapIntensity: 0.5
 })
 
 const createSphere = (radius, position) => {
@@ -121,14 +119,12 @@ const createSphere = (radius, position) => {
 
 // Create box
 const boxGeometry = new THREE.BoxGeometry(1, 1, 1)
-debugObject.boxColor = '#aaf8aaff'
-
 const boxMaterial = new THREE.MeshStandardMaterial({
+    color: '#4ecdc4',
     metalness: 0.3,
     roughness: 0.4,
     envMap: environmentMapTexture,
-    envMapIntensity: 0.5,
-    color: debugObject.boxColor
+    envMapIntensity: 0.5
 })
 
 const createBox = (width, height, depth, position) => {
@@ -203,7 +199,7 @@ gui.add(debugObject, 'reset')
 const floor = new THREE.Mesh(
     new THREE.PlaneGeometry(10, 10),
     new THREE.MeshStandardMaterial({
-        color: '#f575d5ff',
+        color: '#f1e42bff', 
         metalness: 0.3,
         roughness: 0.4,
         envMap: environmentMapTexture,
